@@ -23,7 +23,7 @@ public sealed class TodoService(
         catch (Exception ex)
         {
             logger.LogError(ex, "Failed to retrieve todos from the network");
-            throw ex;
+            throw;
         }
     }
 }
